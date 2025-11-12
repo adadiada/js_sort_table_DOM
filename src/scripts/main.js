@@ -12,7 +12,7 @@ headers.forEach((header, i) => {
       const cellA = a.querySelectorAll('td')[i].textContent;
       const cellB = b.querySelectorAll('td')[i].textContent;
 
-      if (Number(getNumber(cellA))) {
+      if (Number(getNumber(cellA)) && Number(getNumber(cellB))) {
         return getNumber(cellA) - getNumber(cellB);
       }
 
